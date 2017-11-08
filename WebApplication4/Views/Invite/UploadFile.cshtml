@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "UpladFile";
+}
+
+<h2>UpladFile</h2>
+@using (Html.BeginForm("UploadFile", "Invite", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form-horizontal">
+    <input type="file" name="photo" accept="image/jpg, image/jpeg" />
+
+    <input type="submit" value="Create" class="btn btn-default" />
+    </div>
+                                                              
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@ViewBag.Dane
